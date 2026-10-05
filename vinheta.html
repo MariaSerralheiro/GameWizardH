@@ -39,6 +39,9 @@
                     ? JSON.parse(jsonData)
                     : jsonData;
 
+                // Link each game round to the participant who completed the questionnaires.
+                parsedData.prolificId = localStorage.getItem("haicProlificId") || "";
+
                 allGameData.push(parsedData);
                 console.log("✅ Data received from Unity:", parsedData);
                 console.log("Rounds collected:", allGameData.length);
