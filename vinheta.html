@@ -68,7 +68,7 @@
             button.disabled = true;
             button.setAttribute("aria-busy", "true");
             button.textContent = "Submitting...";
-            statusMessage.textContent = "Please wait while your game data is being saved.";
+            statusMessage.textContent = "";
 
             fetch("https://script.google.com/macros/s/AKfycbxwhIjqs2PQuDapreXP402STp-tbD9AJZZYbFFC0-MttqP0PlG8yhEOZc-pyIANFmjo/exec", {
                 method: "POST",
